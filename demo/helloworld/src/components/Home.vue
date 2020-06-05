@@ -1,0 +1,46 @@
+<!--
+ * @Author: tim
+ * @Date: 2020-06-03 14:55:00
+ * @LastEditors: tim
+ * @LastEditTime: 2020-06-03 14:56:46
+ * @Description: 
+--> 
+<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <p>
+      For a guide and recipes on how to configure / customize this project,<br>
+      check out the
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Home',
+  props: {
+    msg: {
+      type: String,
+      default: 'this is a home page'
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>
