@@ -130,7 +130,16 @@ const webpackConfig = merge(baseWebpackConfig, {
       // indexPath: path.join(__dirname, 'dist', 'index.html'),
 
       // Required - Routes to render.
-      routes: [ '/', '/about' ],  
+      routes: [ '/', '/about' ], 
+      server: {
+        // 代理
+        // proxy: {
+        //   "/api": {
+        //     target: "http://localhost:9018",
+        //     secure: false
+        //   }
+        // }
+      }, 
 
       postProcessHtml: function (context) {
         var titles = {
